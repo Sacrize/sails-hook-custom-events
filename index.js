@@ -38,7 +38,7 @@ module.exports = function (sails) {
             sails.log.info('Initializing custom event `'+eventName+'`');
             _observe(eventName, data => {
                 fs.readdirSync(normalizedPath + '/' + eventName).forEach(event => {
-                    require(normalizedPath + '/' + eventName + '/' + event)(sails, data);
+                    require(normalizedPath + '/' + eventName + '/' + event)(data);
                 });
             });
         });

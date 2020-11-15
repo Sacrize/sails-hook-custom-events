@@ -25,13 +25,13 @@ Events and observers are automatically discovered based on the directory structu
 
 The observer must return the function:
 ```javascript
-module.exports = function (sails, data) {
+module.exports = function (data) {
 
 };
 ```
 Emitting an event:
 ```javascript
-sails.hooks.events.emit('event-name-1');
+sails.hooks.events.emit('event-name-1', { ... });
 ```
 ## License
 
