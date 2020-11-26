@@ -23,7 +23,7 @@ Create a directory structure:
     
 Events and observers are automatically discovered based on the directory structure. Their names can be anything.
 
-The observer must return the function:
+Observer is a function:
 ```javascript
 module.exports = function (data) {
 
